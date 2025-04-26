@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background: white;
+  height: 70px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  margin-left: 30px;
+}
+
+.nav-links a {
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.nav-links a.active {
+  color: #ff4b2b; /* reddish color */
+  font-weight: bold;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.icon-links {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-links button {
+  color: #5c518c; /* purple color */
+}

@@ -1,0 +1,26 @@
+<div class="text p-5 w-100 text-center">
+    <h2 class="mb-2 ">Welcome back!</h2>
+    <p class="text-muted">Change your pass easily</p>
+  </div>
+
+
+  <form [formGroup]="Change" (ngSubmit)="Submitting(Change)">
+
+    <div class="PasscodeField mb-3">
+      <label for="pass" class="form-label">Old Password</label>
+      <input type="password" class="form-control" id="pass" formControlName="p">
+    </div>
+
+
+    <div class="PasscodeField mb-3">
+      <label for="pass" class="form-label"> New Password</label>
+      <input type="password" class="form-control" id="pass" formControlName="p">
+    </div>
+
+
+    <div class="login">
+      <button type="submit"   class="btn w-100 mb-3 py-2" [style]=Loginbtn  >Save</button>
+    </div>
+
+
+  </form>

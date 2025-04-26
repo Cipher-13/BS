@@ -1,0 +1,44 @@
+<div class="text p-5 w-100 text-center">
+  <h2 class="mb-2">Create your own account</h2>
+  <p class="text-muted">Register with us</p>
+</div>
+
+<form [formGroup]="register" (ngSubmit)="Submitting(register)">
+  <div class="username d-flex mb-1 gap-3">
+    <div class="First">
+      <label for="fname" class="form-label">First name</label>
+      <input type="text" class="form-control" id="fname" formControlName="fname" required>
+    </div>
+
+    <div class="Last">
+      <label for="lname" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="lname" formControlName="lname" required>
+    </div>
+  </div>
+
+  <div class="EmailField mb-1">
+    <label for="mail" class="form-label">E-mail</label>
+    <input type="email" class="form-control" id="mail" placeholder="xyz@somewhere" formControlName="e" required>
+  </div>
+
+  <div class="PasscodeField mb-1">
+    <label for="pass" class="form-label">Password</label>
+    <input type="password" class="form-control" id="pass" formControlName="p" required>
+  </div>
+
+  <div class="Role mb-3">
+    <label for="role" class="form-label">Role As</label>
+    <select id="role" class="form-select" formControlName="r">
+      <option value="user">User</option>
+      <option value="admin">Admin</option>
+    </select>
+  </div>
+
+  <div class="register">
+    <button type="submit" class="btn w-100 mb-2 py-2" [style]="Loginbtn">Register</button>
+  </div>
+
+  <div class="login">
+    <a class="btn btn-outline-info w-100 py-2 outline-btn" routerLink='/auth/in'>Login</a>
+  </div>
+</form>

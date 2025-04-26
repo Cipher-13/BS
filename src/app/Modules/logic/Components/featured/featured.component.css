@@ -1,0 +1,122 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f8fdfb;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Section Styling */
+.featured-book {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #e6c0c0, #F7FFFE);
+  gap: 60px;
+  background-color: #f8fdfb;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Book Image */
+.book-image img {
+  width: 413px;
+  height: 602px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Book Details */
+.book-details {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-details h2 {
+  font-size: 32px;
+  color: #2c2c54;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #999;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.book-details h3 {
+  font-size: 24px;
+  color: #2c2c54;
+  margin-bottom: 20px;
+}
+
+.book-details p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.price {
+  font-size: 20px;
+  color: #ff5733;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.view-more {
+  padding: 12px 24px;
+  background: transparent;
+  border: 2px solid #2c2c54;
+  color: #2c2c54;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-more:hover {
+  background-color: #2c2c54;
+  color: #fff;
+}
+
+.arrow-btn {
+  background: transparent;
+  border: 2px solid #ff5733;
+  color: #ff5733;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background-color: #ff5733;
+  color: #fff;
+}

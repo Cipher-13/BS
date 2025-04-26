@@ -1,0 +1,41 @@
+<div class="text p-5 w-100 text-center">
+  <h2 class="mb-2 ">Welcome back!</h2>
+  <p class="text-muted">Reset Your Pass now !</p>
+</div>
+
+
+<form [formGroup]="Reset" (ngSubmit)="Submitting(Reset)">
+
+  <div class="EmailField mb-3">
+    <label for="mail" class="form-label">E_mail</label>
+    <input type="text" class="form-control" id="mail" placeholder="xyz@somewhere" formControlName="e">
+  </div>
+
+
+
+  <div class="OTPField mb-3">
+    <label for="otp" class="form-label">OTP</label>
+    <input type="password" class="form-control" id="otp" formControlName="p" placeholder="1234">
+  </div>
+
+
+  <div class="PasscodeField mb-3">
+    <label for="pass" class="form-label">Password</label>
+    <input type="password" class="form-control" id="pass" formControlName="p">
+  </div>
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="remember" style="color:blueviolet">
+    <label class="form-check-label" for="remember" style="color:blueviolet">Remember Me</label>
+  </div>
+
+  <div class="login">
+    <button type="button"   class="btn w-100 mb-3 py-2" [style]=Loginbtn >Save</button>
+  </div>
+
+
+  <div class="register">
+    <button type="button"  class="btn w-100 mb-3 py-2 outline-btn"  routerLink='/Home/in'>Login</button>
+  </div>
+
+</form>

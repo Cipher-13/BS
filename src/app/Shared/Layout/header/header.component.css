@@ -1,0 +1,44 @@
+.header-ribbon {
+  background-color:#393280;
+  color: white;
+  padding: 8px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.left-section, .right-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ribbon-icon {
+  font-size: 18px;
+  height: 18px;
+  width: 18px;
+}
+
+.phone-number {
+  font-weight: 500;
+}
+
+.social-icon {
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  color: white;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  color: #ffd740; /* Angular Material accent color */
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+}

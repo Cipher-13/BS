@@ -1,0 +1,20 @@
+<div class="text p-5 w-100 text-center">
+  <h2 class="mb-2 ">Welcome back!</h2>
+  <p class="text-muted">Forgot your pass ..?</p>
+</div>
+
+
+<form [formGroup]="Forget" (ngSubmit)="Submitting(Forget)">
+
+  <div class="EmailField mb-3">
+    <label for="mail" class="form-label">E_mail</label>
+    <input type="text" class="form-control" id="mail" placeholder="xyz@somewhere" formControlName="e">
+  </div>
+
+
+  <div class="login">
+    <button type="button"   class="btn w-100 mb-3 py-2 outline-btn"  routerLink='in'>Send</button>
+  </div>
+
+
+</form>

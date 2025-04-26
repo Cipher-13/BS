@@ -1,0 +1,25 @@
+<div class=" d-flex" >
+  <div class="row ">
+
+    <!-- Left Side (Image) -->
+    <div class="col-md-6 d-flex  justify-content-center bg-light">
+      <div class="w-100 text-center">
+        <img [src]=FormImage alt="Welcome" class="rounded" style="max-height: 773px;">
+      </div>
+      </div>
+    </div>
+
+    <!-- Right Side (Form) -->
+    <div class="col-md-6 d-flex align-items-center justify-content-end bg-white">
+      <div class="p-5 w-100" style="max-width: 500px;">
+
+        <div class="logo">
+         <div class="text-center"><img [src]=Logo alt="Logo" style="height: 50px;"></div>
+          <ng-content ></ng-content>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
